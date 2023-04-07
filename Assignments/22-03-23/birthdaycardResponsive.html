@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body{
+            background: rgb(59, 5, 5);
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+
+        }
+
+        .card{
+            background: #fdfdfd;
+            border-radius: 4px;
+            height: 85vh;
+            width: 80vw;
+            box-shadow:3px 6px 6px #888888;
+            text-align: center;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center; 
+            padding: 1em;
+            overflow: hidden;
+            
+        }   
+        .card:hover{
+            color: rgb(59, 5, 5);
+            font-size: 50px;
+        }
+        .card:hover img.birthday{
+            box-shadow: 4px 7px 6px rgb(59, 5, 5);
+        }
+        @media (max-width:400px){
+            .card{
+                flex-direction: column;
+            }
+        }
+        img.birthday{
+            max-height: 40vh;
+        }
+        .text{
+            padding: 1em;
+        }
+        .muted{
+            opacity: 0.8;
+        }
+        /* .space{
+            height: 100px;
+        } */
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./birthday2.jpg" alt="birthday" class="birthday">
+   <div class="text">
+    <h2>Happy Birthday !</h2>
+    <p>Wishing you good fortune cookie on your birthday</p>
+    <p class="muted">- Sarah Jessica Parker</p>
+</div>
+<div class="space"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const book=(title,author)=>{
+        //     // function book(title, author){
+        //     // this.title=title
+        //     // this.title=title;
+        //     // this.author=author;
+        //     console.log(this);
+        //     console.log('inside book arrow');
+        // }
+        // const datashow=book()
+        // var myBook=new datashow('js','Richa')
+        // document.write('title is '+myBook.title)
+
+        //    document.write('title is '+myBook.title)
+        // console.log(this);
+
+        // function show(){
+        //     var add=2+2;
+        //     console.log('sum is ',add);
+        //     console.log(this);
+        // }
+        // show();
+
+        // const a={
+        //     name:'Richa',
+        //     age:99,
+        //      sum:()=>{
+        //         // sum:function(){
+        //         var add=2+6;
+        //     console.log('sum is ',add);
+        //     console.log(this);
+        //     }
+        // }
+        // a.sum()
+        const data = [
+            {
+                name: 'Peter',
+                age: 99,
+                place: 'abc'
+            },
+            {
+                name: 'Loki',
+                age: 99,
+                place: 'abc'
+            },
+            {
+                name: 'Thor',
+                age: 99,
+                place: 'abc'
+            }
+        ]
+        for(let i=0;i<data.length;i++){
+    if(data[i].name=="peter"){
+        console.log(data[i],i);
+    }
+}
+
+data.forEach((e,i)=>{
+    if(e.name==="sandhya"){
+        console.log(e,i);
+    }
+})
+        console.log(data[0].age);
+
+    </script>
+</body>
+
+</html>

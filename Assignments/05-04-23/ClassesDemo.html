@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Employee{
+            constructor(givenName,givenExperience,givendivison)
+            {
+            this.name=givenName;
+            this.experience=givenExperience;
+            this.divison=givendivison;    
+            }
+            show(){
+                return `${this.name} is the employee of the month`
+            }
+            joiningYear(){
+                return 2023-this.experience
+            }
+            static add(a,b){
+                return a+b;
+            }
+
+            display(){
+                console.log('this is display method');
+            }
+        }
+
+            class Employeemore extends Employee{
+                constructor(givenName,givenExperience,givendivison,language,github){
+                    super(givenName,givenExperience,givendivison);
+                    this.language=language;
+                    this.github=github;
+                }
+                mylanguage(){
+                    if(this.language=='js'){
+                        return 'JS'
+                    }
+                    else{
+                        return 'No show'
+                    }
+                }
+
+            }
+            //  object1= new Employeemore('Peter',9,'Senior Trainer','js','supermario9988')
+            object1= new Employee('Peter',9,'Senior Trainer')
+
+            // console.log(object1);
+            // console.log();
+            // console.log(object1.mylanguage());
+            // console.log(object1.mylanguage());
+            // console.log(object1.show());
+            // console.log(object1.joiningYear());
+            // console.log(object1.add(2,3));
+            // console.log(object1.add(4,7));
+            // console.log(object1.mylanguage());
+
+
+    </script>()
+</body>
+</html>

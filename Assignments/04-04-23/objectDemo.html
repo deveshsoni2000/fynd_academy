@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Objects in JS</h1>
+    <script>
+        // const person=[1,2,3,'FyndAcademy']
+        // // console.log(person);
+        // document.write(person)
+        // let person = {
+        //     name: 'Peter',
+        //     age: 99,
+        //     place: 'abc'
+        // }
+        // console.log(person);
+        // document.write(person)
+        // document.write(person.place)
+        // document.write(person.person)
+
+        //-----------change propert value in object
+
+        // person.name='Peter Parker';
+        // document.write(person.name)
+
+        //-----------add propert in object
+        // person.email='peter@gmail.com';
+        // console.log(person);
+
+
+        //-----------delete propert in object
+        // delete person.age;
+        // console.log(person);
+        // delete person;
+        // console.log(person);
+
+        //-----------check propert in object
+        // console.log('Age' in person);
+        // console.log('age' in person);
+
+
+
+        //----------loop on object
+        // for(let key in person){
+        // // console.log(key);
+        // console.log(key+':'+person[key]);
+        // }
+
+
+        //------array in object
+        // let person = {
+        //     name: 'Peter',
+        //     age: 99,
+        //     place: 'abc',
+        //     marks:[90,98,99]
+        // }
+        // // console.log(person);
+        // // console.log(person.marks);
+        // console.log(person.marks[1]);
+
+
+        //------object in object
+
+        // let person = {
+        //     name: 'Peter',
+        //     age: 99,
+        //     place: 'abc',
+        //     marks:[90,98,99],
+        //     hobbies:{
+        //         indoorhobby:'Chess',
+        //         outdoorhobby:'Football'
+        //     }
+        // }
+        // console.log(person);
+        // console.log(person.hobbies);
+        // console.log(person.hobbies.indoorhobby);
+
+
+        //-------function in object
+
+        // let person = {
+        //     name: 'Peter',
+        //     age: 99,
+        //     place: 'abc',
+        //     marks: [90, 98, 99],
+        //     hobbies: {
+        //         indoorhobby: 'Chess',
+        //         outdoorhobby: 'Football'
+        //     },
+        //     salary: function () {
+        //         return 9000000;
+        //     }
+        // }
+
+        // console.log(person);
+        // console.log(person.salary);
+        // console.log(person.salary());
+
+
+        let person = {
+            name: 'Peter',
+            age: 99,
+            place: 'abc',
+            marks: [90, 98, 99],
+            hobbies: {
+                indoorhobby: 'Chess',
+                outdoorhobby: 'Football'
+            },
+            salary: function () {
+                return 9000000;
+            },
+            details:function(){
+                // return this.name+' is of '+this.age+' years old'
+                return this.name+' has salary of '+this.salary()
+
+            }
+        }
+        console.log(person.details());
+    </script>
+</body>
+
+</html>
